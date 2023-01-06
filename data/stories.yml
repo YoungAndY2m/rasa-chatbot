@@ -1,0 +1,44 @@
+version: "3.1"
+
+stories:
+
+- story: ask for weather
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_purpose
+  - intent: weather
+  - action: utter_city
+  - intent: city
+  - action: action_weather_api
+  - action: utter_ask_travel
+  - intent: deny
+  - action: utter_help
+
+- story: guess the image happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_purpose
+  - intent: image
+  - action: action_google_guess
+  - action: utter_ask_geocode
+  - intent: deny
+  - action: utter_help
+
+- story: full story version
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_purpose
+  - intent: image
+  - action: action_google_guess
+  - action: utter_ask_geocode
+  - intent: start_geocode
+  - action: action_google_geocode
+  - action: utter_ask_weather
+  - intent: start_latlng_weather
+  - action: action_latlng_weather_api
+  - action: utter_ask_travel
+  - intent: start_travel
+  - action: action_travel_suggestion

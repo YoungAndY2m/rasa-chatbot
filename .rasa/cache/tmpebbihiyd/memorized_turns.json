@@ -1,0 +1,18 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAV5amJJRmpRbW1sQBMqU9E": "utter_city",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAV5amJJRmpRcS5IzmzpBKPEbEAZtBo0Q==": "action_listen",
+    "eJydjlEKgCAQBa+yB+gEXiVCRB4llMW6FiHePcn+Df/eg2GYMeWB0sE4tbHidq8o1aG92aDoO6sLAl/YGMCFcb5cUTQzILnhiCJgXdE+Q6PigpEF/K/DOrm7FY2Q152nBzA3gkc=": "action_weather_api",
+    "eJydjlEKgCAQBa/iATqBV4kQiUctlMm2FSHdPUl/Q/FvHwyz04enU8EzTmNHoc1pFdJhnF2hVR4L7QIX2WMHR4ZcnKLVxIA8BcchAjYJbTMUKi5YmcF1HSPJ3awohHzuOkV+aKynP8/wArcVnbc=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVmbmJ6am1tbEArihOVw==": "action_google_guess",
+    "eJydjssJgDAQBVtJAVaQVkRCkMeykI9sNl5CejcQr6J4ewPD8NbWF9MOwen8rpyTNW0Ol3yENTcELoo03Fogw+E0UK0hAbS/NKoqxE31X+HlBUdP+NignCnAUUUpj6XtAm9qaos=": "utter_ask_geocode",
+    "eJydj8EJhTAQRFtJAVaQVkSWoMMS1KxkN16CvRvIv34UbzPweMyM9RpcPTJOCrNFSd7VHiiFHd79yhbVkBpbFLkxMbVq3nEG7HpwFDNk6ug3w8OKuAfGSweL8AbiAtWPpv4n6EoMmWXBX890A0nlheY=": "action_listen",
+    "eJylkFEKAjEMRK/SA3iCXkUkhHUIxd1GmtSf0rtbqb+yy/qXgcdjJtfWL6E9C17EiyfNMbR5UOYNMXzDmsyRB1sNZTApj+gxSAG87ziqOwpN9Jxhp0XaWHDQIaqygqTC7KRp7mF7kEAXveO/Rr9W8ec1vd/eT06fpw==": "action_google_geocode",
+    "eJylkFEKwjAQRK+SA3iCXEUkLO2wBttsSTb6EXp3Iyn4FVrr3w4Mj3l7LevFlCXi6WhQL8Ga0g4XaIY1W5h8UoTazQmxdnyoUa3hCOi6w8iqiK5VzxF2VviZGAcZLMITHGekdJLUfCg9HEMGGfHfop4VfV7zo1VvzyHW1+sF0jtil3N7A/jF2AE=": "action_listen",
+    "eJylkFEKwyAQRK/iAXoCr1KKLOnESqOWdW0/xLvXYqFfkjT524HhMW/PpZ5UeTCehiZxMWhV+mECeWj1DYtLgtC6OYFbx4UWRSvLgNQVRhYBm17dR1hZ4TxZbGTYGO0CYzNS2knqPpTuxiJO8Ypji0ZW9HnNn1ajPZtYP68XSG7gY5uGXvPs2Nd6eQPAz/Iz": "action_latlng_weather_api",
+    "eJylkEEOwiAQRa/CATwBVzGGTOrvSKTQwKAL0ruLqcYVKbY7Jvl5eY9zWU6qzBEPQ4PY4LUq68N4mqDV53A2CXzd5oRYN9bXU7TiCMiywcgiiGad7iNsWNiJGJ0MDoEdDGektJO09lC6G0YYwhXHjFpV9P6aP6taPl2sX9cTJDfEY07NrnG0ceqFkDjPXyFDs20DLy9XbxFP": "action_listen"
+  }
+}

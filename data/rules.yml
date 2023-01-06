@@ -1,0 +1,64 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say help anytime the user rejects offer
+  steps:
+  - intent: deny
+  - action: utter_help
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Ask city every time the user ask weather
+  steps:
+  - intent: city
+  - action: action_weather_api
+  - action: utter_ask_travel
+
+- rule: Guess the image label using google vision api
+  steps:
+  - intent: image
+  - action: action_google_guess
+  - action: utter_ask_geocode
+
+- rule: Recall memory anytime the user asks
+  steps:
+  - intent: recall_memory
+  - action: action_recall_memory
+
+- rule: Geocode anytime the user asks
+  steps:
+  - intent: start_geocode
+  - action: action_google_geocode
+  - action: utter_ask_weather
+
+- rule: Specific weather anytime the user asks
+  steps:
+  - intent: start_latlng_weather
+  - action: action_latlng_weather_api
+  - action: utter_ask_travel
+
+- rule: Travel suggestions anytime the user asks
+  steps:
+  - intent: start_travel
+  - action: action_travel_suggestion
+
+- rule: Paint a picture anytime the user asks
+  steps:
+  - intent: paint_picture
+  - action: action_paint_picture
+  - action: utter_help
+
+- rule: Paint a cartoon anytime the user asks
+  steps:
+  - intent: paint_cartoon
+  - action: action_paint_cartoon
+  - action: utter_help

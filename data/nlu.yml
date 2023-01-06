@@ -1,0 +1,109 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - hey there
+
+- intent: weather
+  examples: |
+    - What's the weather?
+    - How's the weather today?
+    - Tell me the weather forcast
+
+- intent: recall_memory
+  examples: |
+    - What's my last search?
+    - Do you know what my last one say?
+    - What did I search before?
+    - Do you remember the previous one?
+
+- intent: paint_picture
+  examples: |
+    - Paint me a picture
+    - Imagine this
+    - Help me create a picture
+    - I would like to see...
+    - Can you imagine this?
+
+- intent: paint_cartoon
+  examples: |
+    - Can you give me a cartoon version of the place?
+    - Cartoon picture is great
+    - I want to see this in comic
+
+- intent: city
+  examples: |
+    - shanghai
+    - beijing
+    - london
+    - London
+    - Berlin
+    - Berlingham
+    - Tokyo
+    - Washington
+    - DC
+    - New York
+    - Boston
+    - Madrid
+    - Atlanta 
+    - Madrid
+
+- intent: image
+  examples: |
+    - *.jpg
+    - *.png
+    - *.svg
+    - C: Users *.jpg
+    - D: Users *.png
+    - U: Users *.svg
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: start_geocode
+  examples: |
+    - yes, find me the geocoding of this place
+    - okay, the geocoding is important to me
+
+- intent: start_latlng_weather
+  examples: |
+    - alrighty, I want to know the exact places's current weather
+    - fine, go ahead, tell me the exact answer
+
+- intent: start_travel
+  examples: |
+    - I'll travel to this place
+    - For sure! Otherwise why I ask the weather of this specific place.
+    - Definitely go to this place.
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+

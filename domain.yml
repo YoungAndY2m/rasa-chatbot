@@ -1,0 +1,141 @@
+version: "3.1"
+
+intents:
+  - greet
+  - weather
+  - recall_memory
+  - paint_picture
+  - paint_cartoon
+  - city
+  - image
+  - goodbye
+  - start_geocode
+  - start_latlng_weather
+  - start_travel
+  - deny
+  - bot_challenge
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_purpose:
+  - text: "What can I do for you today? I can help you find location of the image, give me one :) "
+
+  utter_help:
+  - text: "Alrighty! What can I do for you then? I can help you find location of the image, give me one :)"
+
+  utter_image:
+  - text: "Here is your visually similar input image I found on Google\n{url}"
+    image: "{img}"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_city:
+  - text: "Which city you want to check for?"
+
+  utter_temp:
+  - text: "Today's temperature in {city} is {temp} degree Celcius.\nWeather is {main} ({description}) Temperature is mininum {temp_min} Celcius and maximum is {temp_max} Celcius"
+
+  utter_spec:
+  - text: "Today's temperature in lat: {lat} lng: {lng} is {temp} degree Celcius.\nWeather is {main} ({description}) Temperature is mininum {temp_min} Celcius and maximum is {temp_max} Celcius"
+
+  utter_guess:
+  - text: "My guess is...\nThis is {guess}"
+
+  utter_ask_geocode:
+  - text: "Should I help you find where it is?"
+    buttons:
+    - title: "Of course!"
+      payload: "/start_geocode"
+    - title: "No, thanks"
+      payload: "/deny"
+
+  utter_ask_weather:
+  - text: "Should I help you find the current weather of this location?"
+    buttons:
+      - title: "Of course!"
+        payload: "/start_latlng_weather"
+      - title: "No, thanks"
+        payload: "/deny"
+  
+  utter_ask_travel:
+  - text: "Are you planning for a little travel to this location?"
+    buttons:
+      - title: "Of course!"
+        payload: "/start_travel"
+      - title: "No, just curious"
+        payload: "/deny"
+  
+  utter_temp_high:
+  - text: "It's pretty hot there, maybe second thought..."
+
+  utter_temp_medium:
+  - text: "Great temperature! Enjoy your travel!"
+
+  utter_temp_low:
+  - text: "It's pretty chilly there, maybe second thought..."
+
+  utter_tell_location:
+  - text: "It's in lat: {lat}, lng: {lng}"
+
+  utter_paint:
+  - text: "A good description! Here's my drawing."
+    image: "{img}"
+
+  utter_recall:
+  - text: "I remember the last image is {place} in lat: {lat}, lng: {lng}.\nAlso you asked {city}'s weather forecast."
+
+  utter_confuse:
+  - text: "No history detected.\nWould you like to let me guess a location? Input an image."
+
+slots: 
+  city:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+  label:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+  url:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+  lat:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+  lng:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+  temp:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: custom
+
+actions:
+- action_weather_api
+- action_latlng_weather_api
+- action_travel_suggestion
+- action_google_guess
+- action_google_geocode
+- action_recall_memory
+- action_paint_picture
+- action_paint_cartoon
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
